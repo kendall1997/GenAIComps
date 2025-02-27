@@ -1,0 +1,15 @@
+# Copyright (C) 2024 Intel Corporation
+# SPDX-License-Identifier: Apache-2.0
+
+services:
+  llm_mathsolver:
+    image: mtc-opea-fm-local.af01p-fm.devtools.intel.com/mathsolver-tgi:latest
+    container_name: llm-mathsolver-server
+    ports:
+      - "9000:8080"
+    environment:
+      no_proxy: ${no_proxy}
+      http_proxy: ${http_proxy}
+      https_proxy: ${https_proxy}
+      LLM_ENDPOINT: ${LLM_ENDPOINT}
+      LLM_MODEL_ID: ${LLM_MODEL_ID}
