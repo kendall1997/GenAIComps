@@ -9,7 +9,7 @@ services:
     image: ${REGISTRY:-opea}/llm-mathsolver:${TAG:-latest}
     container_name: llm-mathsolver-server
     ports:
-      - ${FAQ_PORT:-9000}:9000
+      - ${MATH_PORT:-9000}:8080
     ipc: host
     environment:
       no_proxy: ${no_proxy}
