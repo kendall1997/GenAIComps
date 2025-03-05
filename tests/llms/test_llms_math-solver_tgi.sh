@@ -28,7 +28,7 @@ function build_docker_images() {
 
 function start_service() {
     export LLM_ENDPOINT_PORT=12101  # 12100-12199
-    export FAQ_PORT=10501 #10500-10599
+    export MATH_PORT=10501 #10500-10599
     export host_ip=${host_ip}
     export HF_TOKEN=${HF_TOKEN} # Remember to set HF_TOKEN before invoking this test!
     export LLM_ENDPOINT="http://${host_ip}:${LLM_ENDPOINT_PORT}"
