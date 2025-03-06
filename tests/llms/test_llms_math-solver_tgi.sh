@@ -83,7 +83,7 @@ function validate_backend_microservices() {
 
     # math
     validate_services \
-        "${host_ip}:${FAQ_PORT}/v1/chat/completions" \
+        "${host_ip}:${MATH_PORT}/v1/chat/completions" \
         "answer" \
         "mathsolver-tgi" \
         "mathsolver-tgi" \
@@ -91,7 +91,7 @@ function validate_backend_microservices() {
 
     # math
     validate_services \
-        "${host_ip}:${FAQ_PORT}/v1/chat/completions" \
+        "${host_ip}:${MATH_PORT}/v1/chat/completions" \
         "answer" \
         "mathsolver-tgi" \
         "mathsolver-tgi" \
